@@ -34,6 +34,7 @@
   .photo__grid-container {
     max-width: 288px;
     margin: 0 auto;
+    padding-bottom: 62px;
   }
 
   .photo__grid {

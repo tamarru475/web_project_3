@@ -104,14 +104,17 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr;
-    gap: 28px 25px;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 25px 28px;
     padding-bottom: 73px;
-    min-height: 606px;
     max-width: 720px;
+    max-height: 820px;
   }
 
   .place__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     font-size: 42px;
     font-style: normal;
     font-weight: 900;
@@ -156,12 +159,13 @@
 }
 @media screen and (max-width: 600px) {
   .place {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     column-gap: 30px;
     padding-top: 63px;
-    min-height: 626px;
+    min-height: 1400px;
     max-width: 288px;
   }
 
@@ -194,7 +198,8 @@
   }
 
   .place__button-container {
-    margin: 0 auto;
+    padding-left: 16px;
+    padding-bottom: 50px;
   }
 
   .place__button {
