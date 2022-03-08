@@ -1,0 +1,33 @@
+.places {
+  position: relative;
+  max-width: 987px;
+  display: block;
+  padding-top: 92px;
+  margin: 0 auto;
+}
+
+.places__container {
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .places {
+    position: relative;
+    max-width: 768px;
+    padding-top: 88px;
+  }
+
+  .places__container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .places {
+    max-width: 320px;
+    padding-top: 62px;
+  }
+  .places__container {
+    max-width: 100vw;
+  }
+}
