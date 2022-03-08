@@ -1,10 +1,10 @@
-.photo__grid-container {
+.intro__grid-container {
   position: relative;
   max-width: calc(100% - 94px);
   margin: 0 auto;
 }
 
-.photo__grid {
+.intro__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -12,7 +12,7 @@
   padding-top: 118px;
 }
 
-.photo__grid-image {
+.intro__grid-image {
   width: 100%;
 }
 @media screen and (max-width: 960px) {
