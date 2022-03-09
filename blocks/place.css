@@ -159,17 +159,15 @@
 }
 @media screen and (max-width: 600px) {
   .place {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    column-gap: 30px;
-    padding-top: 63px;
-    min-height: 1400px;
+    gap: 30px;
     max-width: 288px;
   }
 
   .place__title {
+    margin: 0;
     font-size: 32px;
     font-style: normal;
     font-weight: 900;
@@ -181,6 +179,7 @@
   }
 
   .place__artist {
+    margin: 0;
     padding-left: 16px;
     max-width: 288px;
     text-align: left;
@@ -199,7 +198,6 @@
 
   .place__button-container {
     padding-left: 16px;
-    padding-bottom: 50px;
   }
 
   .place__button {

@@ -1,27 +1,28 @@
-.intro__grid-container {
+.gallery {
   position: relative;
   max-width: calc(100% - 94px);
   margin: 0 auto;
 }
-
-.intro__grid {
+.gallery__image-list {
+  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
   padding-top: 118px;
+  margin: 0;
 }
 
-.intro__grid-image {
+.gallery__image {
   width: 100%;
 }
 @media screen and (max-width: 960px) {
-  .intro__grid-container {
+  .gallery {
     max-width: 720px;
     margin: 0 auto;
   }
 
-  .intro__grid {
+  .gallery__image-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -31,15 +32,18 @@
 }
 
 @media screen and (max-width: 600px) {
-  .photo__grid-container {
+  .gallery {
     max-width: 288px;
-    margin: 0 auto;
     padding-bottom: 62px;
+    margin: 0;
   }
 
-  .photo__grid {
+  .gallery__image-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     column-gap: 12px;
+    margin: 0;
   }
 }
