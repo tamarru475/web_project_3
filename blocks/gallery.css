@@ -16,9 +16,11 @@
 .gallery__image {
   width: 100%;
 }
+
 @media screen and (max-width: 960px) {
   .gallery {
-    max-width: 720px;
+    position: relative;
+    max-width: 768px;
     margin: 0 auto;
   }
 
@@ -28,13 +30,18 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 16px;
     padding-top: 90px;
+    max-width: 94%;
+    padding-right: 24px;
+  }
+
+  .gallery__image {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .gallery {
-    max-width: 288px;
-    padding-bottom: 62px;
+    max-width: 320px;
     margin: 0;
   }
 
@@ -45,5 +52,6 @@
     align-items: center;
     column-gap: 12px;
     margin: 0;
+    max-width: 100%;
   }
 }

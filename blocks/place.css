@@ -1,8 +1,11 @@
 .place {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 2fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "title artist"
+    "image text"
+    "button text";
   gap: 40px;
   max-width: 984px;
   padding-bottom: 93px;
@@ -19,6 +22,7 @@
   line-height: 76px;
   letter-spacing: 0em;
   text-align: left;
+  grid-area: title;
 }
 
 .place__artist {
@@ -27,6 +31,7 @@
   justify-content: flex-end;
   max-width: 456px;
   min-height: 45px;
+  grid-area: artist;
 }
 
 .place__artist-header {
@@ -56,6 +61,7 @@
 
 .place__image {
   max-width: 100%;
+  grid-area: image;
 }
 
 .place__text {
@@ -63,6 +69,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  grid-area: text;
 }
 
 .place__paragraph {
@@ -77,6 +84,7 @@
 }
 
 .place__link {
+  padding-top: 48px;
   text-decoration: none;
 }
 
@@ -93,6 +101,7 @@
   line-height: 21.78px;
   transition: background-color 0.3s ease-in-out;
   display: inline-block;
+  grid-area: button;
 }
 
 .place__button:hover {
@@ -102,13 +111,21 @@
 @media screen and (max-width: 960px) {
   .place {
     position: relative;
+    padding-bottom: 72px;
+    max-width: 100%;
+    min-height: 15%;
+    margin: 0 auto;
+  }
+
+  .place__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      "title artist"
+      "image text"
+      "button text";
     gap: 25px 28px;
-    padding-bottom: 73px;
-    max-width: 720px;
-    max-height: 820px;
   }
 
   .place__title {
@@ -121,8 +138,12 @@
     line-height: 46px;
     letter-spacing: 0em;
     text-align: left;
-    max-width: 340px;
-    min-height: 46px;
+    max-width: 100%;
+    grid-area: title;
+  }
+
+  .place__artist {
+    grid-area: artist;
   }
 
   .place__artist-header {
@@ -155,52 +176,90 @@
     text-align: left;
     max-width: 352px;
     gap: 25px;
+    grid-area: text;
+  }
+
+  .place__button {
+    grid-area: button;
   }
 }
 @media screen and (max-width: 600px) {
   .place {
-    display: flex;
+    position: relative;
+    display: grid;
     flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    max-width: 288px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto 1fr;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "text"
+      "button";
+    max-width: 100%;
+    min-height: 11%;
+    padding-bottom: 63px;
   }
 
   .place__title {
-    margin: 0;
     font-size: 32px;
     font-style: normal;
     font-weight: 900;
     line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
+    display: flex;
+    max-width: 75%;
     padding-left: 16px;
-    max-width: 288px;
+    grid-area: title;
   }
-
   .place__artist {
-    margin: 0;
     padding-left: 16px;
-    max-width: 288px;
+    max-width: 90%;
+    grid-area: artist;
+  }
+  .place__artist-header {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.12em;
     text-align: left;
   }
 
-  .place__image {
-    min-width: 320px;
-    margin: 0;
-    padding: 0;
+  .place__artist-content {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 
   .place__text {
-    max-width: 288px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    gap: 25px;
     padding-left: 16px;
+    max-width: 90%;
+    grid-area: text;
   }
 
-  .place__button-container {
-    padding-left: 16px;
+  .place__image {
+    width: 100vw;
+    grid-area: image;
+  }
+
+  .place__link {
+    margin: 0 auto;
   }
 
   .place__button {
-    width: 288px;
+    max-width: 100%;
+    grid-area: button;
   }
 }
