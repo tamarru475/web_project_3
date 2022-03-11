@@ -43,19 +43,16 @@
   text-align: center;
 }
 
-.contact__button-wrapper {
+.contact__button-container {
   padding-top: 32px;
 }
 
-.contact__overlay-link {
+.contact__button {
   text-decoration: none;
-}
-
-.contact__overlay-button {
   background-color: #0278fe;
   color: #ffffff;
-  width: 137px;
-  height: 48px;
+  max-width: 137px;
+  padding: 13px 20px;
   border-radius: 4px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -69,7 +66,7 @@
   opacity: 0.8;
   z-index: 1;
 }
-.contact__overlay-button:hover {
+.contact__button:hover {
   background: #0063d2;
   z-index: 2;
 }

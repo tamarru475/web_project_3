@@ -44,12 +44,12 @@
 .header__image-container {
   position: relative;
   max-width: 984px;
-  max-height: 615px;
   background: url(../images/kalegin-michail-179870-unsplash.png) no-repeat
     center/cover;
 }
 
 .header__image {
+  max-width: 100%;
   mix-blend-mode: hue;
 }
 

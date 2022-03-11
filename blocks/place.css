@@ -83,16 +83,12 @@
   text-align: left;
 }
 
-.place__link {
-  padding-top: 48px;
-  text-decoration: none;
-}
-
 .place__button {
   background-color: #0278fe;
+  text-decoration: none;
+  padding: 13px 20px;
   color: #ffffff;
-  width: 248px;
-  height: 48px;
+  max-width: 248px;
   border-radius: 4px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -100,7 +96,6 @@
   font-size: 18px;
   line-height: 21.78px;
   transition: background-color 0.3s ease-in-out;
-  display: inline-block;
   grid-area: button;
 }
 
@@ -254,12 +249,11 @@
     grid-area: image;
   }
 
-  .place__link {
+  .place__button-container {
     margin: 0 auto;
   }
 
   .place__button {
-    max-width: 100%;
     grid-area: button;
   }
 }
