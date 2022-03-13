@@ -1,5 +1,5 @@
 .page {
-  max-width: 1600px;
+  max-width: 100vw;
   margin: auto;
   font-family: "Inter", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,18 +8,22 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   color: #ffffff;
-  background: #2a2c2f;
+  background: #2a2c2f 100vw;
+  -webkit-background-size: 100vw;
+  -moz-background-size: 100vw;
+  -o-background-size: 100vw;
+  background-size: 100vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .page {
     max-width: 768px;
-    min-width: 320px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .page {
+    position: relative;
     max-width: 320px;
   }
 }

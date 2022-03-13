@@ -8,27 +8,31 @@
 
 .places__container {
   display: block;
+  max-width: 987px;
 }
 
 @media screen and (max-width: 960px) {
   .places {
-    position: relative;
     max-width: 768px;
+    padding-top: 88px;
   }
 
   .places__container {
     max-width: 94vw;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 72px;
   }
 }
 @media screen and (max-width: 600px) {
   .places {
     max-width: 320px;
-    padding-top: 63px;
+    padding-top: 62px;
   }
 
   .places__container {
     max-width: 100%;
-    margin: 0 auto;
+    column-gap: 63px;
   }
 }

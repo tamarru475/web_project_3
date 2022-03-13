@@ -1,23 +1,21 @@
 .contact {
   position: relative;
   background: #2a2c2f;
-}
-
-.contact__overlay {
-  position: relative;
-  margin: 0 auto;
   max-width: 1184px;
-  min-height: 740px;
-  background: url(../images/visit_us_image.png) no-repeat center/cover;
-  transition: opacity 0.3s ease-in-out;
+  margin: 0 auto;
 }
 
 .contact__overlay-content {
+  position: relative;
+  margin: 0 auto;
+  min-height: 740px;
+  background: url(../images/visit_us_image.png) no-repeat center/cover;
+  transition: opacity 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 243px;
+  column-gap: 32px;
 }
 
 .contact__overlay-title {
@@ -41,10 +39,8 @@
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
-}
-
-.contact__button-container {
-  padding-top: 32px;
+  max-width: 220px;
+  padding-bottom: 32px;
 }
 
 .contact__button {
@@ -63,44 +59,35 @@
 }
 
 .contact__overlay:hover {
-  opacity: 0.8;
-  z-index: 1;
 }
+
 .contact__button:hover {
   background: #0063d2;
   z-index: 2;
 }
 @media screen and (max-width: 600px) {
-  .contact__overlay {
+  .overlay {
     max-width: 320px;
-    min-height: 256px;
-    padding-top: 64px;
   }
 
   .contact__overlay-content {
-    margin: 0 auto;
-    max-width: 288px;
-    max-height: 163px;
+    min-height: 256px;
+    padding-top: 64px;
+    max-width: 100%;
     padding-top: 46px;
+    gap: 16px;
   }
 
   .contact__overlay-title {
     font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
     line-height: 35px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding-bottom: 16px;
+    padding: 0;
   }
 
   .contact__overlay-address {
-    max-width: 280px;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center;
+    padding: 0;
+    max-width: 170px;
   }
 }
