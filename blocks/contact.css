@@ -1,21 +1,21 @@
 .contact {
   position: relative;
-  background: #2a2c2f;
   max-width: 1184px;
+  background: url(../images/visit_us_image.png) no-repeat center/cover;
+  transition: background 0.5s ease-in-out;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .contact__overlay-content {
-  position: relative;
-  margin: 0 auto;
   min-height: 740px;
-  background: url(../images/visit_us_image.png) no-repeat center/cover;
-  transition: opacity 0.3s ease-in-out;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   column-gap: 32px;
+  z-index: 1;
 }
 
 .contact__overlay-title {
@@ -28,6 +28,7 @@
   letter-spacing: 0em;
   padding-bottom: 32px;
   text-align: center;
+  z-index: 2;
 }
 
 .contact__overlay-address {
@@ -41,6 +42,7 @@
   text-align: center;
   max-width: 220px;
   padding-bottom: 32px;
+  z-index: 2;
 }
 
 .contact__button {
@@ -58,7 +60,9 @@
   transition: background 0.3s ease-in-out;
 }
 
-.contact__overlay:hover {
+.contact:hover {
+  background-color: #2a2c2f;
+  background-blend-mode: overlay;
 }
 
 .contact__button:hover {

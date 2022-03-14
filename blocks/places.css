@@ -2,19 +2,19 @@
   position: relative;
   max-width: 987px;
   display: block;
-  padding-top: 92px;
-  margin: 0 auto;
+  margin-top: 92px;
 }
 
 .places__container {
   display: block;
   max-width: 987px;
+  margin-left: 148px;
 }
 
 @media screen and (max-width: 960px) {
   .places {
     max-width: 768px;
-    padding-top: 88px;
+    margin-top: 88px;
   }
 
   .places__container {
@@ -28,7 +28,7 @@
 @media screen and (max-width: 600px) {
   .places {
     max-width: 320px;
-    padding-top: 62px;
+    margin-top: 62px;
   }
 
   .places__container {

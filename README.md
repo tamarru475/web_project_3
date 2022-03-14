@@ -17,6 +17,21 @@ This is a project that showcases the hometowns of some of Practicum's employees.
 **Images**
 
 Images of practicums team hometowns .
+discribing the history of the place and their own uniqe prepective on it.
+
+**Tecnologies used in the project:**
+
+- Html
+- Css
+- Adaptive layout
+- grid layout
+- flex-box
+
+**Hoping to add in the future:**
+
+- videos
+- playlists
+- great animation
 
 **Git hub pages link**
 
