@@ -72,13 +72,12 @@
 @media screen and (max-width: 600px) {
   .overlay {
     max-width: 320px;
+    margin-top: 64px;
   }
 
   .contact__overlay-content {
-    min-height: 256px;
-    padding-top: 64px;
+    min-height: 254px;
     max-width: 100%;
-    padding-top: 46px;
     gap: 16px;
   }
 
