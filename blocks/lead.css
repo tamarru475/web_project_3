@@ -63,10 +63,6 @@
   .lead__image-container {
     max-width: 100%;
   }
-
-  .lead__image {
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 600px) {

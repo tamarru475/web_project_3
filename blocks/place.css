@@ -86,8 +86,6 @@
   text-decoration: none;
   padding: 13px 20px;
   color: #ffffff;
-  max-width: 248px;
-  height: 25px;
   border-radius: 4px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -97,6 +95,8 @@
   transition: background-color 0.3s ease-in-out;
   grid-area: button;
   text-align: center;
+  max-width: 208px;
+  height: 22px;
 }
 
 .place__button:hover {
@@ -119,7 +119,7 @@
       "title artist"
       "image text"
       "button text";
-    gap: 28px 46px;
+    gap: 46px 28px;
   }
 
   .place__title {
@@ -135,6 +135,7 @@
 
   .place__artist-header {
     max-width: 50px;
+    padding-bottom: 8px;
   }
 
   .place__artist-content {
@@ -169,7 +170,7 @@
       "image"
       "text"
       "button";
-    max-width: 100%;
+    max-width: 320px;
     gap: 30px;
     margin: 0 auto;
   }
@@ -196,14 +197,15 @@
   }
 
   .place__image {
-    width: 100%;
+    max-width: 100%;
     grid-area: image;
   }
 
   .place__button {
     grid-area: button;
     padding: 13px 40px;
-    width: 70%;
+    max-width: 208px;
+    width: 100%;
     margin: 0 auto;
   }
 }

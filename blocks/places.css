@@ -1,6 +1,6 @@
 .places {
   position: relative;
-  max-width: 987px;
+  max-width: 1280px;
   display: block;
   margin-top: 92px;
 }
@@ -8,13 +8,14 @@
 .places__container {
   display: block;
   max-width: 987px;
-  margin-left: 148px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 960px) {
   .places {
     max-width: 768px;
     margin-top: 88px;
+    margin-bottom: 92px;
   }
 
   .places__container {
@@ -33,6 +34,6 @@
 
   .places__container {
     max-width: 100%;
-    column-gap: 63px;
+    column-gap: 50px;
   }
 }

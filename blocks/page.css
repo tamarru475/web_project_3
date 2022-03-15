@@ -14,16 +14,3 @@
   -o-background-size: 100vw;
   background-size: 100vw;
 }
-
-@media screen and (max-width: 960px) {
-  .page {
-    max-width: 768px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .page {
-    position: relative;
-    max-width: 320px;
-  }
-}

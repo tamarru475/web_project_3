@@ -1,12 +1,11 @@
 .gallery {
-  position: relative;
-  max-width: 1118px;
-  margin: 0 auto;
+  margin-top: 118px;
+  max-width: 1280px;
 }
 
 .gallery__image-list {
-  margin-top: 118px;
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 1184px;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
